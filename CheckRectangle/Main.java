@@ -2,11 +2,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        scanner.useDelimiter("[\\s]+");
+        Scanner input = new Scanner(System.in);
+
+        // Using Regular Syntax to ask 2 input at the same time
+        input.useDelimiter("[\\s]+");
         System.out.print("Enter a point with two coordinates separated by a space: ");
-        double x = scanner.nextDouble();
-        double y = scanner.nextDouble();
+        double x = input.nextDouble();
+        double y = input.nextDouble();
 
         checkRectangle(x, y);
     }
