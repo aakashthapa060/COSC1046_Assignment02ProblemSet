@@ -4,12 +4,14 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        // Using Regular Syntax to ask 2 input at the same time
+        // Using Regular Expressions to ask 2 input at the same time
         input.useDelimiter("[\\s]+");
+
         System.out.print("Enter a point with two coordinates separated by a space: ");
         double x = input.nextDouble();
         double y = input.nextDouble();
 
+        // function cheackReactangle called
         checkRectangle(x, y);
     }
 
